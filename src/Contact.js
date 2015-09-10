@@ -13,6 +13,9 @@ Contact = (function(self){
         var firstName;
         var lastName;
 
+        var mails = [];
+        var phones = [];
+
         this.gender = function(){
             return gender;
         };
@@ -25,12 +28,28 @@ Contact = (function(self){
             return lastName;
         };
 
+        this.addMail = function(_address, _mailCategory){
+            mails.push(new Contact.Mail(_address, _mailCategory));
+        };
+
+        this.addMobilePhone = function(_number, _phoneCategory, _phoneType){
+            phones.push(new Contact.Phone(_number, _phoneCategory, _phoneType));
+        };
+
+        this.mails = function(){
+            return mails;
+        };
+
+        this.phones = function(){
+            return phones;
+        };
+
         this.id = function(){
             'xxxxx-xxxxx-xxxxx-xxxxx-xxxxx'.replace(/x/g, function (c) {
                 var r = Math.random()*16| 0, v = c == 'x' ? r : (r&0x3|0x8);
                 return v.toString(16);
             });
-        }
+        };
 
         var init = function(_gender, _firstName, _lastName){
             gender = _gender;

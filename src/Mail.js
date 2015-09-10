@@ -17,7 +17,7 @@ Contact = (function(self){
         }
 
         this.category = function(){
-            return mailCaterory
+            return mailCaterory;
         }
 
         var init = function(_address, _mailCategory){
