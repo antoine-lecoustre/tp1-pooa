@@ -32,7 +32,7 @@ Contact = (function(self){
             mails.push(new Contact.Mail(_address, _mailCategory));
         };
 
-        this.addMobilePhone = function(_number, _phoneCategory, _phoneType){
+        this.addPhone = function(_number, _phoneCategory, _phoneType){
             phones.push(new Contact.Phone(_number, _phoneCategory, _phoneType));
         };
 
