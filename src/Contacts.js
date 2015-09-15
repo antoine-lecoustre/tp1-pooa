@@ -76,6 +76,10 @@ Contact = (function (self) {
             }
         };
 
+        this.search = function(strategy){
+            return strategy.search(this);
+        };
+
         var init = function () {
 
         };
