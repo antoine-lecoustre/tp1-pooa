@@ -17,24 +17,24 @@ Contact = (function(self){
 
         this.number = function(){
             return number;
-        }
+        };
 
         this.category = function(){
             return phoneCategory;
-        }
+        };
 
         this.type = function(){
             return phoneType;
-        }
+        };
 
         var init = function(_number, _phoneCategory, _phoneType){
-            number= _number;
+            number = _number;
             phoneCategory = _phoneCategory;
             phoneType = _phoneType;
-        }
+        };
 
         init(_number, _phoneCategory, _phoneType);
-    }
+    };
 
     return self;
 

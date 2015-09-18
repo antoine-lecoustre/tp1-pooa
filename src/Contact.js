@@ -28,12 +28,12 @@ Contact = (function(self){
             return lastName;
         };
 
-        this.addMail = function(_address, _mailCategory){
-            mails.push(new Contact.Mail(_address, _mailCategory));
+        this.addMail = function(_mail){
+            mails.push(_mail);
         };
 
-        this.addPhone = function(_number, _phoneCategory, _phoneType){
-            phones.push(new Contact.Phone(_number, _phoneCategory, _phoneType));
+        this.addPhone = function(_phones){
+            phones.push(_phones);
         };
 
         this.mails = function(){

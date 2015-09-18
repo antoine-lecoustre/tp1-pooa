@@ -26,7 +26,7 @@ Contact = (function(self){
         var mailAddress;
 
         this.search = function(contacts){
-
+            return contacts.getFromMail(_mailAddress);
         };
 
         var init = function(_mailAddress){
@@ -34,7 +34,21 @@ Contact = (function(self){
         };
 
         init(_mailAddress);
-    }
+    };
+
+    self.FromPhoneSearchStrategy = function(_phoneNumber){
+        var phoneNumber;
+
+        this.search = function(contacts){
+            return contacts.getFromPhone(_phoneNumber);
+        };
+
+        var init = function(_phoneNumber){
+            phoneNumber = _phoneNumber;
+        };
+
+        init(_phoneNumber);
+    };
 
     return self;
 

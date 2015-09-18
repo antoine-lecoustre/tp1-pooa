@@ -14,13 +14,13 @@ Contact = (function(self){
 
         this.createContactWithProfessionalMail = function(_gender, _firstName, _lastName, _mailAddress){
             var contact = new Contact.Contact(_gender, _firstName, _lastName);
-            contact.addMail(_mailAddress, Contact.MailCategory.PRO);
+            contact.addMail(new Contact.Mail(_mailAddress, Contact.MailCategory.PRO));
             return contact;
         };
 
         this.createContactWithProfessionalMobile = function(_gender, _firstName, _lastName, _mobilePhone){
             var contact = new Contact.Contact(_gender, _firstName, _lastName);
-            contact.addPhone(_mobilePhone, Contact.PhoneCategory.PRO, Contact.PhoneType.MOBILE);
+            contact.addPhone(new Contact.Phone(_mobilePhone, Contact.PhoneCategory.PRO, Contact.PhoneType.MOBILE));
             return contact;
         };
     }

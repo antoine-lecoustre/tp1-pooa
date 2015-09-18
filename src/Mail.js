@@ -14,19 +14,19 @@ Contact = (function(self){
 
         this.address = function(){
             return address;
-        }
+        };
 
         this.category = function(){
             return mailCaterory;
-        }
+        };
 
         var init = function(_address, _mailCategory){
-            address= _address;
+            address = _address;
             mailCaterory = _mailCategory;
-        }
+        };
 
         init(_address, _mailCategory);
-    }
+    };
 
     return self;
 

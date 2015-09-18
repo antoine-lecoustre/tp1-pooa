@@ -76,6 +76,52 @@ Contact = (function (self) {
             }
         };
 
+        this.getFromMail = function (_mailAddress) {
+            var retListContact = [];
+
+            for(var i=0; i<listContacts.length;i++){
+                var mails = listContacts[i].mails();
+
+                for(var j=0;j<mails.length;j++){
+                    if(_mailAddress == mails[j].address()){
+                        retListContact.push(listContacts[i]);
+                    }
+                }
+
+            }
+
+            if(retListContact.length == 0){
+                return null;
+            }else if(retListContact.length == 1){
+                return retListContact[0];
+            }else{
+                return retListContact;
+            }
+        };
+
+        this.getFromPhone = function (_phoneNumber) {
+            var retListContact = [];
+
+            for(var i=0; i<listContacts.length;i++){
+                var phones = listContacts[i].phones();
+
+                for(var j=0;j<phones.length;j++){
+                    if(_phoneNumber == phones[j].number()){
+                        retListContact.push(listContacts[i]);
+                    }
+                }
+
+            }
+
+            if(retListContact.length == 0){
+                return null;
+            }else if(retListContact.length == 1){
+                return retListContact[0];
+            }else{
+                return retListContact;
+            }
+        };
+
         this.search = function(strategy){
             return strategy.search(this);
         };
