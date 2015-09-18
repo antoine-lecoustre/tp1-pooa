@@ -22,7 +22,7 @@ Contact = (function (self) {
 
         this.clear = function () {
             for (var i = 0; i < listContacts.length; i++) {
-                listContacts.remove(i);
+                listContacts.splice(i,1);
             }
         };
 
