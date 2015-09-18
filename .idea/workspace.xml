@@ -89,8 +89,8 @@
           <file leaf-file-name="Contacts.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Contacts.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="4.1034484">
-                  <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+                <state vertical-scroll-proportion="-4.6896553">
+                  <caret line="10" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="137" selection-end-column="18" />
                   <folding>
                     <element signature="e#0#43#0" expanded="false" />
                   </folding>
@@ -98,11 +98,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Command.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Contacts2.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Contacts2.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-0.12008733">
+                  <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Command.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Command.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.76180696">
-                  <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="26" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -115,8 +125,18 @@
           <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7248908">
-                  <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.33187774">
+                  <caret line="223" column="4" selection-start-line="223" selection-start-column="4" selection-end-line="223" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ProxyCache.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ProxyCache.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -159,8 +179,10 @@
         <option value="$PROJECT_DIR$/src/Contact.js" />
         <option value="$PROJECT_DIR$/src/Builder.js" />
         <option value="$PROJECT_DIR$/src/Contacts.js" />
-        <option value="$PROJECT_DIR$/test/test.js" />
         <option value="$PROJECT_DIR$/src/Command.js" />
+        <option value="$PROJECT_DIR$/src/Contacts2.js" />
+        <option value="$PROJECT_DIR$/test/test.js" />
+        <option value="$PROJECT_DIR$/src/ProxyCache.js" />
       </list>
     </option>
   </component>
@@ -334,7 +356,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -376,24 +398,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -796,28 +800,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Command.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Contacts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.1034484">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
+        <state vertical-scroll-proportion="-4.6896553">
+          <caret line="10" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="137" selection-end-column="18" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Command.js">
+    <entry file="file://$PROJECT_DIR$/src/Contacts2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76180696">
-          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+        <state vertical-scroll-proportion="-0.12008733">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProxyCache.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7248908">
-          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.33187774">
+          <caret line="223" column="4" selection-start-line="223" selection-start-column="4" selection-end-line="223" selection-end-column="4" />
           <folding />
         </state>
       </provider>
