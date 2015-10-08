@@ -21,9 +21,8 @@ Contact = (function(self){
 
         this.setNumber = function(_number){
             number = _number;
-        }
-
-
+        };
+        
         this.category = function(){
             return phoneCategory;
         };

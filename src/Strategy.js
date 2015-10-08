@@ -64,7 +64,8 @@ Contact = (function(self){
         };
 
         this.change = function(_contacts){
-            _contacts.modifyPhone(_initPhone, _changedPhone);
+            return _contacts = _contacts.modifyPhone(_initPhone, _changedPhone);
+
         };
 
         init(_firstName, _lastName, _initPhone, _changedPhone);
@@ -74,7 +75,7 @@ Contact = (function(self){
         var tag;
 
         this.search = function(_contacts){
-            return _contacts.getFromTag();
+            return _contacts.getFromTag(_tag);
         };
 
         var init = function(_tag){
