@@ -23,7 +23,14 @@ Contact = (function(self){
             contact.addPhone(new Contact.Phone(_mobilePhone, Contact.PhoneCategory.PRO, Contact.PhoneType.MOBILE));
             return contact;
         };
-    }
+
+        this.createContactWithTag = function(_gender, _firstName, _lastName, _tag){
+            var contact = new Contact.Contact(_gender, _firstName, _lastName);
+            contact.addTag(_tag);
+
+            return contact;
+        };
+    };
 
     return self;
 

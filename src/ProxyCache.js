@@ -19,13 +19,13 @@ Contact = (function(self){
             for(var i=0;i<_listContacts.length;i++){
 
                 inCache = _listContacts[i].search(strategy);
-                console.log(inCache);
 
                 if(inCache != null){
                     cache[strategy] = inCache;
                     break;
                 }
             }
+
             return inCache;
         };
 

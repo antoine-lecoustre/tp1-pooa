@@ -39,8 +39,8 @@ Contact = (function(self){
     self.FromPhoneSearchStrategy = function(_phoneNumber){
         var phoneNumber;
 
-        this.search = function(contacts){
-            return contacts.getFromPhone(_phoneNumber);
+        this.search = function(_contacts){
+            return _contacts.getFromPhone(_phoneNumber);
         };
 
         var init = function(_phoneNumber){
@@ -48,6 +48,40 @@ Contact = (function(self){
         };
 
         init(_phoneNumber);
+    };
+
+    self.ChangePhoneStrategy = function(_firstName, _lastName, _initPhone, _changedPhone){
+        var firstName;
+        var lastName;
+        var initPhone;
+        var changedPhone;
+
+        var init = function(_firstName, _lastName, _initPhone, _changedPhone){
+            firstName = _firstName;
+            lastName = _lastName;
+            initPhone = _initPhone;
+            changedPhone = _changedPhone;
+        };
+
+        this.change = function(_contacts){
+            _contacts.modifyPhone(_initPhone, _changedPhone);
+        };
+
+        init(_firstName, _lastName, _initPhone, _changedPhone);
+    };
+
+    self.FromTagSearchStrategy = function(_tag){
+        var tag;
+
+        this.search = function(_contacts){
+            return _contacts.getFromTag();
+        };
+
+        var init = function(_tag){
+            tag = _tag;
+        };
+
+        init(_tag);
     };
 
     return self;

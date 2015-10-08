@@ -259,7 +259,6 @@ ContactTestCase.prototype.testContactsProxy2 = function () {
         '0612343000', '0612343010'));
 
     var contact2 = proxyCache.search(strategy);
-
     assertEquals(contact2, null);
 };
 

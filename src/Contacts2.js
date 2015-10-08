@@ -99,7 +99,6 @@ Contact = (function (self) {
                         retListContact.push(listContacts[i]);
                     }
                 }
-
             }
 
             if(retListContact.length == 0){
@@ -111,8 +110,44 @@ Contact = (function (self) {
             }
         };
 
-        this.search = function(strategy){
-            return strategy.search(this);
+        this.getFromTag = function (_tag) {
+            var retListContact = [];
+
+            for(var i=0; i<listContacts.length;i++){
+                if(_tag == listContacts[i].tag()){
+                    retListContact.push(listContacts[i]);
+                }
+            }
+
+            if(retListContact.length == 0){
+                return null;
+            }else if(retListContact.length == 1){
+                return retListContact[0];
+            }else{
+                return retListContact;
+            }
+        };
+
+        this.modifyPhone = function (_phoneNumber, _newPhoneNumber) {
+            var retListContact = [];
+
+            for(var i=0; i<listContacts.length;i++){
+                var phones = listContacts[i].phones();
+
+                for(var j=0;j<phones.length;j++){
+                    if(_phoneNumber == phones[j].number()){
+                        phones[j].setNumber(_newPhoneNumber);
+                    }
+                }
+            }
+        };
+
+        this.search = function(_strategy){
+            return _strategy.search(this);
+        };
+
+        this.change = function(_changeStrategy){
+            _changeStrategy.change(this);
         };
 
         var init = function () {

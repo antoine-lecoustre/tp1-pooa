@@ -16,6 +16,8 @@ Contact = (function(self){
         var mails = [];
         var phones = [];
 
+        var tag;
+
         this.gender = function(){
             return gender;
         };
@@ -36,6 +38,10 @@ Contact = (function(self){
             phones.push(_phones);
         };
 
+        this.addTag = function(_tag){
+            tag = _tag;
+        };
+
         this.mails = function(){
             return mails;
         };
@@ -43,6 +49,10 @@ Contact = (function(self){
         this.phones = function(){
             return phones;
         };
+
+        this.tag = function(){
+            return tag;
+        }
 
         this.id = function(){
             'xxxxx-xxxxx-xxxxx-xxxxx-xxxxx'.replace(/x/g, function (c) {
