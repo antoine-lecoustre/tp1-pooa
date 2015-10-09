@@ -50,9 +50,59 @@ Contact = (function(self){
             return phones;
         };
 
+        this.phonesToString = function(){
+            var ret = '';
+
+            for(var i=0;i<phones.length;i++){
+                var category;
+                var type;
+
+                if(phones[i].category() == 1){
+                    category = 'PERSO';
+                }else{
+                    category = 'PRO';
+                }
+
+                if(phones[i].type() == 1){
+                    type = 'MOBILE';
+                }else{
+                    type = 'PHONE';
+                }
+
+                ret += phones[i].number() + "["+category+"]["+type+"]";
+                if(i!=phones.length - 1){
+                    ret += "/";
+                }
+            }
+
+            return ret;
+        };
+
+        this.mailsToString = function(){
+            var ret = '';
+
+            for(var i=0;i<mails.length;i++){
+                var category;
+
+
+                if(mails[i].category() == 1){
+                    category = 'PERSO';
+                }else{
+                    category = 'PRO';
+                }
+
+                ret += mails[i].address() + "["+category+"]";
+                if(i!=mails.length - 1){
+                    ret += "/";
+                }
+            }
+
+            return ret;
+        };
+
         this.tag = function(){
             return tag;
-        }
+        };
 
         this.id = function(){
             'xxxxx-xxxxx-xxxxx-xxxxx-xxxxx'.replace(/x/g, function (c) {

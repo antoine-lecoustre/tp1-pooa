@@ -126,6 +126,10 @@ Contact = (function (self) {
             return strategy.search(this);
         };
 
+        this.iterator = function(){
+            return new Contact.ContactIterator(listContacts);
+        };
+
         var init = function () {
 
         };
